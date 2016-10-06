@@ -23,10 +23,12 @@
     <sprite>sprites\enemy</sprite>
     <sprite>sprites\needle</sprite>
     <sprite>sprites\door</sprite>
+    <sprite>sprites\Door2</sprite>
     <sprite>sprites\Player2</sprite>
     <sprite>sprites\lava</sprite>
     <sprite>sprites\pwrup2</sprite>
     <sprite>sprites\spr_placa</sprite>
+    <sprite>sprites\sprite10</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -51,14 +53,18 @@
     <object>objects\obj_needle</object>
     <object>objects\obj_enemy_nofall</object>
     <object>objects\obj_door</object>
+    <object>objects\obj_door2</object>
     <object>objects\start</object>
     <object>objects\obj_wall2</object>
     <object>objects\obj_deaths</object>
     <object>objects\obj_placa</object>
     <object>objects\obj_score</object>
+    <object>objects\object14</object>
+    <object>objects\object15</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\Intro</room>
+    <room>rooms\fase8</room>
     <room>rooms\Menu</room>
     <room>rooms\fase1</room>
     <room>rooms\fase2</room>

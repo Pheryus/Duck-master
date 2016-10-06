@@ -116,7 +116,7 @@ if(place_meeting(x+hsp,y,obj_wall)){
     }
     hsp = 0;
 }
-x += hsp;
+
 
 //Vertical Collision
 if(place_meeting(x,y+vsp,obj_wall)){
@@ -125,7 +125,6 @@ if(place_meeting(x,y+vsp,obj_wall)){
     }
     vsp = 0;
 }
-y += vsp;
 
 //Horizontal Collision Player
 if(place_meeting(x+hsp+1,y,obj_player2)){
@@ -136,14 +135,9 @@ if(place_meeting(x,y+vsp+1,obj_player2)){
     vsp = 0;
 }
 
-if(place_meeting(x,y+vsp,obj_wall2) or place_meeting(x+hsp,y,obj_wall2)){
-    YouDieBitch();
-}
-
-
-
-
-
+//if(place_meeting(x,y+vsp,obj_wall2) or place_meeting(x+hsp,y,obj_wall2)){
+ //   YouDieBitch();
+//}
 
 //Needle Collision
 if(place_meeting(x+hsp,y,obj_needle)){
@@ -152,9 +146,32 @@ if(place_meeting(x+hsp,y,obj_needle)){
     }
     hsp = 0;
 }
+x += hsp;
+y += vsp;
 
-
-
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="obj_wall2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>YouDieBitch();
 </string>
           </argument>
         </arguments>
